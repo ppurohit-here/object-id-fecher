@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeric ID Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img id="hereLogo" src="map-icon.png" alt="HERE Logo">
+    <div id="instructions">
+        <h3>Instructions:</h3>
+        <p>1. Paste your mixed Object IDs into the input box.</p>
+        <p>2. Click the "Go" button.</p>
+        <p>3. Numeric IDs will be displayed in the draggable table.</p>
+    </div>
+    <div class="container">
+        <h1>Numeric ID Extractor</h1>
+        <div id="inputGroup">
+            <input type="text" id="objectIds" placeholder="Enter Object IDs here...">
+            <button id="goButton">Go!</button>
+        </div>
+        <div id="resultTable" class="hidden">
+            <h2>Numeric IDs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Numeric ID</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <footer>© HERE Global B.V.</footer>
+    <script src="script.js"></script>
+</body>
+</html>

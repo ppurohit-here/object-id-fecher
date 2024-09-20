@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(188, 245, 245);
+    color: #333333;
+    padding: 20px;
+}
+
+#hereLogo {
+    position: absolute;
+    top: 2px; /* Minor margin from the top corner */
+    left: 5px; /* Minor margin from the left corner */
+    width: 1.5in; /* Updated size */
+    height: 1.5in; /* Updated size */
+}
+
+#instructions {
+    position: absolute;
+    top: 150px; /* Moved 3.5 inches below the logo */
+    left: 10px; /* Align with the logo */
+    font-size: 0.9em;
+    line-height: 1.5; /* Improved readability */
+    max-width: 200px; /* Set a max width for the instructions */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slightly pop up effect on hover */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#inputGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#objectIds {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#goButton {
+    padding: 10px 20px;
+    background-color: cyan;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#goButton:hover {
+    background-color: darkcyan;
+}
+
+#resultTable {
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: grey;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 0.8em;
+    color: #666;
+    text-align: right;
+}
